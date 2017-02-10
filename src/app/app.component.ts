@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'app body!';
+  title = 'app works!';
   public isCollapsed:boolean = true;
 
 }

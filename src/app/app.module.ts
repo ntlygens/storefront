@@ -11,14 +11,14 @@ import { CollapseModule } from 'ng2-bootstrap';
 import { HomeModule } from './home/home.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { FooterModule } from './footer/footer.module';
+//import { Ng2BreadcrumbModule } from './ng2-breadcrumb/ng2-breadcrumb';
 
 import { AppComponent } from './app.component';
-//import { AboutComponent } from 'home/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    //AboutComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -30,7 +30,9 @@ import { AppComponent } from './app.component';
     CollapseModule.forRoot(),
     HomeModule,
     NavbarModule,
-    FooterModule
+    FooterModule,
+    //Ng2BreadcrumbModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
