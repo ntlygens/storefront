@@ -9,14 +9,14 @@ import { FooterMenuType } from './footer.enum';
 })
 
 export class FooterComponent implements OnInit {
-  public footerMenuItems: any[];
+  public footerMenuItems: any;
   public footerBrandMenu: any;
 
   constructor () {}
 
   ngOnInit() {
-    this.footerMenuItems = ROUTES.filter(footerMenuItem => footerMenuItem.footerMenuType !== FooterMenuType.BRAND);
-    this.footerBrandMenu = ROUTES.filter(footerMenuItem => footerMenuItem.footerMenuType === FooterMenuType.BRAND)[0];
+    this.footerMenuItems = ROUTES.filter(footerMenuItem => footerMenuItem.footerMenuType !== FooterMenuType.BRAND)[0];
+    this.footerBrandMenu = ROUTES.filter(footerBrand => footerBrand.footerMenuType === FooterMenuType.BRAND)[0];
   }
 
 }

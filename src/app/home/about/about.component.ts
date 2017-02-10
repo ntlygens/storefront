@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ROUTES } from './about-routing.module';
-import { AboutContentData } from './about.enum';
+import { AboutContent } from './about.enum';
 
 @Component({
   selector: 'app-about',
@@ -9,14 +9,14 @@ import { AboutContentData } from './about.enum';
 })
 
 export class AboutComponent implements OnInit {
-  public aboutContents: any[];
-  public aboutHeaders: any[];
+  public aboutContents: any;
+  public aboutHeaders: any;
 
   constructor() { }
 
   ngOnInit() {
-    this.aboutContents = ROUTES.filter(aboutContent => aboutContent.dataType === AboutContentData.content);
-    this.aboutHeaders = ROUTES.filter(aboutHeader => aboutHeader.dataType === AboutContentData.title)[0];
+    this.aboutContents = ROUTES.filter(aboutContent => aboutContent.dataType === AboutContent.DATA)[0];
+    this.aboutHeaders = ROUTES.filter(aboutHeader => aboutHeader.dataType === AboutContent.HEADER)[0];
 
   }
 
