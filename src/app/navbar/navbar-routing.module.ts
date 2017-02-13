@@ -6,6 +6,7 @@ import { MenuType, RouteInfo } from './navbar.enum';
 export const ROUTES: RouteInfo[] = [
   { path: '', title: 'Home', menuType: MenuType.BRAND },
   { path: 'about', title: 'About', menuType: MenuType.RIGHT },
+  { path: 'guide', title: 'Guide', menuType: MenuType.RIGHT },
   { path: 'contact', title: 'Contact', menuType: MenuType.RIGHT }
 ];
 
