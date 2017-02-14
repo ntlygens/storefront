@@ -6,18 +6,13 @@ import { AboutComponent } from './about/about.component';
 import { GuideComponent } from './guide/guide.component';
 import { SkyscrapperPnlComponent } from './skyscrapper-pnl.component';
 
+import { AppContentDataType, AppContentData } from "../../app/app.enum";
 import { HomeContentData, HomeContentDataType } from './home.enum';
-import { AdblockPnlComponent } from "./adblock-pnl.component";
-import { BannerPnlComponent } from "./banner-pnl.component";
-import { Call2actionPnlComponent } from "./call2action-pnl.component";
-import { HalfPortraitPnlComponent } from './half-portrait-pnl.component';
-import { PortraitPnlComponent } from "./portrait-pnl.component";
 
 export const MODULE_ROUTES: RouterModule[] = [
   { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'guide', component: GuideComponent }
-
 
 ];
 
@@ -25,12 +20,11 @@ export const MODULE_COMPONENTS = [
   HomeComponent,
   AboutComponent,
   GuideComponent,
-  AdblockPnlComponent,
-  BannerPnlComponent,
-  Call2actionPnlComponent,
-  HalfPortraitPnlComponent,
-  PortraitPnlComponent,
   SkyscrapperPnlComponent
+];
+
+export const ROUTES: AppContentData[] = [
+  { size: 'skyscrapper_size', static_classes: 'card card-inverse card-primary mb-3 text-center', header: 'skyscrapper_header', title: 'skyscrapper_title', subtitle: 'skyscrapper_sub-title', content: 'skyscrapper_content', image: 'skyscrapper_image', call2action: 'skyscrapper_call2action', footer: 'skyscrapper_footer', dataType: AppContentDataType.SKYSCRAPPER }
 ];
 
 export const JUMBOTRON_ROUTES: HomeContentData[] = [

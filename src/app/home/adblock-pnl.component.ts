@@ -13,8 +13,11 @@ import { Component, OnInit } from '@angular/core';
         </div>
 
   `,
-  styles: []
+  styles: [`
+
+  `]
 })
+
 export class AdblockPnlComponent implements OnInit {
 
   constructor() { }

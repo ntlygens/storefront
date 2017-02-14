@@ -11,13 +11,14 @@ import { CollapseModule } from 'ng2-bootstrap';
 import { HomeModule } from './home/home.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { FooterModule } from './footer/footer.module';
-//import { Ng2BreadcrumbModule } from './ng2-breadcrumb/ng2-breadcrumb';
+//import { DISPLAY_COMPONENTS } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    //DISPLAY_COMPONENTS
 
   ],
   imports: [
@@ -31,10 +32,15 @@ import { AppComponent } from './app.component';
     HomeModule,
     NavbarModule,
     FooterModule,
-    //Ng2BreadcrumbModule.forRoot()
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    //DISPLAY_COMPONENTS
+  ],
+  exports: [
+
+  ]
 })
 export class AppModule { }

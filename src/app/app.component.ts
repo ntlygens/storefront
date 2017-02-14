@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app works!';
   public isCollapsed:boolean = true;
 
+
+  constructor () {}
+
+  ngOnInit() {
+
+  }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { JUMBOTRON_ROUTES } from "./home-routing.module";
-import { HomeContentDataType } from "./home.enum";
+import { JUMBOTRON_ROUTES } from './home-routing.module';
+import { HomeContentDataType } from './home.enum';
 
 
 @Component({
@@ -19,8 +19,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.jumbotronTitles = JUMBOTRON_ROUTES.filter( jumbotronTitle => jumbotronTitle.dataType === HomeContentDataType.TITLE );
     this.jumbotronSubTitles = JUMBOTRON_ROUTES.filter( jumbotronSubTitle => jumbotronSubTitle.dataType === HomeContentDataType.SUBTITLE );
-    this.jumbotronBanners = JUMBOTRON_ROUTES.filter( jumbotronBanner => jumbotronBanner.dataType === HomeContentDataType.BANNER );
+    this.jumbotronBanners = JUMBOTRON_ROUTES.filter( jumbotronBanner => jumbotronBanner.dataType === HomeContentDataType.BANNER )[0];
     this.jumbotronDatas = JUMBOTRON_ROUTES.filter( jumbotronData => jumbotronData.dataType === HomeContentDataType.DATA );
+
   }
 
 }
