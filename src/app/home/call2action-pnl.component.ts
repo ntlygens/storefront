@@ -3,17 +3,21 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-call2action-pnl',
   template: `
-        <div class="card card-inverse card-warning mb-3 text-center">
+        <div class="call2action_size card card-inverse card-warning mb-3 text-center">
           <div class="card-block">
             <blockquote class="card-blockquote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              <p>Click</p>
+              <footer></footer>
             </blockquote>
           </div>
         </div>
 
   `,
-  styles: []
+  styles: [`
+    .call2action_size {
+      max-height: 150px;
+    }
+  `]
 })
 export class Call2actionPnlComponent implements OnInit {
 

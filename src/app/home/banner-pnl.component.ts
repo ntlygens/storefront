@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { AppContentDataType, AppContentData } from '../app.enum';
+import { APP_DISPLAY_MODULE_ROUTES } from '../app-routing.module';
+import { DISPLAY_MODULE_ROUTES } from '../home/about/about-routing.module';
 
 @Component({
   selector: 'app-banner-pnl',
   template: `
-        <div class="card card-inverse card-info mb-3 text-center">
+        <div class="banner_size {{homeBannerPanelBackground.size}} {{homeBannerPanelBackground.static}} card card-inverse rounded-0 border-0 mb-3 card-info text-center">
           <div class="card-block">
             <blockquote class="card-blockquote">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -13,13 +16,43 @@ import { Component, OnInit } from '@angular/core';
         </div>
 
   `,
-  styles: []
+  styles: [`
+    .banner_size {
+      max-height: 150px;
+    }
+
+    .homeBannerBckgrnd {
+      color: #0000cc;
+      background-image: url("../../assets/banners/homeBanner2.jpg");
+      background-size: cover;
+    }
+
+    .aboutBannerBckgrnd {
+      color: #0000cc;
+      font-size: 120%;
+      background-image: url("../../assets/panoramic.jpg");
+      background-size: cover;
+    }
+
+  `]
 })
 export class BannerPnlComponent implements OnInit {
+  public isHomeBanner: boolean;
 
-  constructor() { }
+  public homeBannerPanelBackground: any;
+  public aboutBannerPanelBackground: any;
+
+
+  constructor() {
+    this.isHomeBanner = false;
+  }
+
+  //TODO: write funcrion to get current location and apply correct background //
 
   ngOnInit() {
+    this.homeBannerPanelBackground = APP_DISPLAY_MODULE_ROUTES.filter(bannerBackground => bannerBackground.dataType === AppContentDataType.BANNER)[0];
+    this.aboutBannerPanelBackground = DISPLAY_MODULE_ROUTES.filter(bannerBackground => bannerBackground.dataType === AppContentDataType.BANNER)[0];
+
   }
 
 }

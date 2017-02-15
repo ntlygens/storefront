@@ -12,7 +12,7 @@ export enum AppContentDataType {
 
 export interface AppContentData {
   size: any;
-  static_classes: any;
+  static: any;
   header: any;
   title: any;
   subtitle: any;

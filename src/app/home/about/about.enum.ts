@@ -6,5 +6,6 @@ export enum AboutContentDataType {
 export interface AboutContentData {
   title: string;
   content: string;
+  image: any;
   dataType: AboutContentDataType;
 }
