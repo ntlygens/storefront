@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AdblockPnlComponent } from "./home/adblock-pnl.component";
-import { BannerPnlComponent } from "./home/banner-pnl.component";
-import { Call2actionPnlComponent } from "./home/call2action-pnl.component";
+import { AdblockPnlComponent } from './home/adblock-pnl.component';
+import { BannerPnlComponent } from './home/banner-pnl.component';
+import { Call2actionPnlComponent } from './home/call2action-pnl.component';
 import { HalfPortraitPnlComponent } from './home/half-portrait-pnl.component';
-import { PortraitPnlComponent } from "./home/portrait-pnl.component";
+import { PortraitPnlComponent } from './home/portrait-pnl.component';
+import { SkyscrapperPnlComponent } from './home/skyscrapper-pnl.component';
 
 import { AppContentDataType, AppContentData } from "./app.enum";
 
@@ -15,7 +16,8 @@ export const DISPLAY_COMPONENTS = [
   BannerPnlComponent,
   Call2actionPnlComponent,
   HalfPortraitPnlComponent,
-  PortraitPnlComponent
+  PortraitPnlComponent,
+  SkyscrapperPnlComponent
 ];
 
 export const APP_DISPLAY_MODULE_ROUTES: AppContentData[] = [

@@ -22,16 +22,11 @@ export const MODULE_ROUTES: RouterModule[] = [
 
 ];
 
-export const MODULE_COMPONENTS = [
+export const MODULE_ROUTES_COMPONENTS = [
   HomeComponent,
   AboutComponent,
-  GuideComponent,
-  AdblockPnlComponent,
-  BannerPnlComponent,
-  Call2actionPnlComponent,
-  HalfPortraitPnlComponent,
-  PortraitPnlComponent,
-  SkyscrapperPnlComponent
+  GuideComponent
+
 ];
 
 export const DISPLAY_MODULE_ROUTES: AppContentData[] = [
