@@ -44,7 +44,7 @@ export const DISPLAY_MODULE_ROUTES: AppContentData[] = [
 ];
 
 export const JUMBOTRON_ROUTES: HomeContentData[] = [
-  { title: 'title 1', subtitle: 'subtitle 1', banner: '../../assets/carousel/image-1.jpg', data: 'text data 1', dataType: HomeContentDataType.BANNER },
+  { title: 'title 1', subtitle: 'subtitle 1', banner: '../../assets/temp-banner.jpg', data: 'text data 1', dataType: HomeContentDataType.BANNER },
   { title: 'title 2', subtitle: 'subtitle 2', banner: '../../assets/material.jpg', data: '', dataType: HomeContentDataType.BANNER },
   { title: 'title 3', subtitle: 'subtitle 3', banner: '../../assets/panoramic.jpg', data: '', dataType: HomeContentDataType.BANNER }
 
