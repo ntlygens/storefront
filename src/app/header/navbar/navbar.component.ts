@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ROUTES } from './navbar-routing.module';
-import { MenuType } from './navbar.enum';
+import { MODULE_ROUTES } from '../../app-routing.module';
+import { HeaderMenuType } from '../../app.enum';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styles: [`
+
+  `]
 })
+
 export class NavbarComponent implements OnInit {
   public menuItems: any[];
   public brandMenu: any;
@@ -15,8 +18,9 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.menuItems = ROUTES.filter(menuItem => menuItem.menuType !== MenuType.BRAND);
-    this.brandMenu = ROUTES.filter(menuItem => menuItem.menuType === MenuType.BRAND)[0];
+    this.menuItems = MODULE_ROUTES.filter(menuItem => menuItem.menuType !== HeaderMenuType.BRAND);
+    this.brandMenu = MODULE_ROUTES.filter(menuItem => menuItem.menuType === HeaderMenuType.BRAND)[0];
+
   }
 
   public get menuIcon(): string{
@@ -25,7 +29,7 @@ export class NavbarComponent implements OnInit {
 
   public getMenuItemClasses(menuItem: any) {
     return {
-      'pull-xs-right': this.isCollapsed && menuItem.menuType === MenuType.RIGHT
+      'pull-xs-right': this.isCollapsed && menuItem.menuType === HeaderMenuType.RIGHT
     }
   }
 

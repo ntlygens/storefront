@@ -4,8 +4,6 @@ import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ng2-bootstrap/carousel/carousel.module';
 import { MODULE_ROUTES_COMPONENTS, MODULE_ROUTES } from '../app-routing.module';
 
-import { AdblockPnlComponent } from './adblock-pnl.component';
-
 
 @NgModule({
   imports: [
@@ -13,7 +11,7 @@ import { AdblockPnlComponent } from './adblock-pnl.component';
     RouterModule.forChild(MODULE_ROUTES),
     CarouselModule
   ],
-  declarations: [MODULE_ROUTES_COMPONENTS, AdblockPnlComponent],
-  exports: [MODULE_ROUTES_COMPONENTS, AdblockPnlComponent]
+  declarations: [MODULE_ROUTES_COMPONENTS],
+  exports: [MODULE_ROUTES_COMPONENTS]
 })
 export class HomeModule { }
