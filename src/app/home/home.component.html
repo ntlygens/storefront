@@ -1,3 +1,17 @@
+<div class="container">
+  <div *ngFor="let post of posts" class="card">
+    <h3 class="card-header">{{post.id}}</h3>
+    <div class="card-block">
+      <h2 class="card-title">{{post.title}}</h2>
+      <p class="card-text">{{post.body}}</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
 <!--<div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-3">Fluid jumbotron</h1>
@@ -5,7 +19,7 @@
   </div>
 </div>-->
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -30,7 +44,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div>-->
 
 <!--<carousel>
   <slide>
@@ -58,11 +72,11 @@
 </carousel>-->
 
 
-<hr>
+<!--<hr>
 <div class="container-fluid">
   <div class="row align-items-start container-fluid px-0">
     <div class="col-md-8">
-      <app-adblock-pnl class="{{adblockPanels.size}}"></app-adblock-pnl>
+      <app-adblock-pnl class=""></app-adblock-pnl>
       <div class="row">
         <app-half-portrait-pnl class="col-6 mb-2"></app-half-portrait-pnl>
         <app-half-portrait-pnl class="col-6 mb-2"></app-half-portrait-pnl>
@@ -70,7 +84,7 @@
         <app-half-portrait-pnl class="col-6 mb-2"></app-half-portrait-pnl>
       </div>
     </div>
-    <app-skyscrapper-pnl class="{{skyscrapperPanels.size}} "></app-skyscrapper-pnl>
+    <app-skyscrapper-pnl class=""></app-skyscrapper-pnl>
   </div>
 
 
@@ -91,10 +105,10 @@
               <app-call2action-pnl class="col-md-6 d-inline-block"></app-call2action-pnl>
             </div>
             <app-half-portrait-pnl class="col-md-12 d-inline"></app-half-portrait-pnl>
-            <!--<div class="row">
+            &lt;!&ndash;<div class="row">
               <app-call2action-pnl class="col-md-6 d-inline-block"></app-call2action-pnl>
               <app-call2action-pnl class="col-md-6 d-inline-block"></app-call2action-pnl>
-            </div>-->
+            </div>&ndash;&gt;
           </div>
           <div class="col-md-6">
             <app-portrait-pnl class=""></app-portrait-pnl>
@@ -106,9 +120,9 @@
       </div>
 
     </div>
-    <app-adblock-pnl class="{{adblockPanels.size}} col"></app-adblock-pnl>
+    <app-adblock-pnl class="col"></app-adblock-pnl>
   </div>
-</div>
+</div>-->
 <!--<div class="container-fluid">
   <div class="row">
     <div class="col-sm-6">

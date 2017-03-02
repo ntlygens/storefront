@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AppContentDataType, AppContentData } from '../app.enum';
-import { APP_DISPLAY_MODULE_ROUTES } from '../app-routing.module';
-import { DISPLAY_MODULE_ROUTES } from '../home/about/about-routing.module';
+//import { AppContentDataType, AppContentData } from '../app.enum';
+//import { APP_DISPLAY_MODULE_ROUTES } from '../app-routing.module';
+//import { DISPLAY_MODULE_ROUTES } from '../home/about/about-routing.module';
 
 @Component({
   selector: 'app-banner-pnl',
   template: `
-        <div class="banner_size {{homeBannerPanelBackground.size}} {{homeBannerPanelBackground.static}} card card-inverse rounded-0 border-0 mb-3 card-info text-center">
+        <div class="banner_size card card-inverse rounded-0 border-0 mb-3 card-info text-center">
           <div class="card-block">
             <blockquote class="card-blockquote">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -50,8 +50,8 @@ export class BannerPnlComponent implements OnInit {
   //TODO: write funcrion to get current location and apply correct background //
 
   ngOnInit() {
-    this.homeBannerPanelBackground = APP_DISPLAY_MODULE_ROUTES.filter(bannerBackground => bannerBackground.dataType === AppContentDataType.BANNER)[0];
-    this.aboutBannerPanelBackground = DISPLAY_MODULE_ROUTES.filter(bannerBackground => bannerBackground.dataType === AppContentDataType.BANNER)[0];
+    //this.homeBannerPanelBackground = APP_DISPLAY_MODULE_ROUTES.filter(bannerBackground => bannerBackground.dataType === AppContentDataType.BANNER)[0];
+    //this.aboutBannerPanelBackground = DISPLAY_MODULE_ROUTES.filter(bannerBackground => bannerBackground.dataType === AppContentDataType.BANNER)[0];
 
   }
 

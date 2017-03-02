@@ -12,10 +12,9 @@ import { HalfPortraitPnlComponent } from "./half-portrait-pnl.component";
 import { PortraitPnlComponent } from "./portrait-pnl.component";
 import { SkyscrapperPnlComponent } from './skyscrapper-pnl.component';
 
-import { AppContentDataType, AppContentData } from "../../app/app.enum";
-import { HomeContentData, HomeContentDataType } from './home.enum';
+//import { HomeContentData, HomeContentDataType } from './home.enum';
 
-export const MODULE_ROUTES: RouterModule[] = [
+/*export const MODULE_ROUTES: RouterModule[] = [
   { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'guide', component: GuideComponent }
@@ -27,9 +26,9 @@ export const MODULE_ROUTES_COMPONENTS = [
   AboutComponent,
   GuideComponent
 
-];
+];*/
 
-export const DISPLAY_MODULE_ROUTES: AppContentData[] = [
+/*export const DISPLAY_MODULE_ROUTES: AppContentData[] = [
   { size: 'col-md-8', static: '', header: 'adblock_header', title: 'adblock_title', subtitle: 'adblock_sub-title', content: 'adblock_content', image: 'adblock_image', call2action: 'adblock_call2action', footer: 'adblock_footer', dataType: AppContentDataType.ADBLOCK },
   { size: 'col-md-12', static: '', header: 'banner_header', title: 'banner_title', subtitle: 'banner_sub-title', content: 'banner_content', image: 'banner_image', call2action: 'banner_call2action', footer: 'banner_footer', dataType: AppContentDataType.BANNER },
   { size: 'col-2 col-xs-4', static: '', header: 'call2action_header', title: 'call2action_title', subtitle: 'call2action_sub-title', content: 'call2action_content', image: 'call2action_image', call2action: 'call2action_call2action', footer: 'call2action_footer', dataType: AppContentDataType.CALL2ACTION },
@@ -43,7 +42,7 @@ export const JUMBOTRON_ROUTES: HomeContentData[] = [
   { title: 'title 2', subtitle: 'subtitle 2', banner: '../../assets/material.jpg', data: '', dataType: HomeContentDataType.BANNER },
   { title: 'title 3', subtitle: 'subtitle 3', banner: '../../assets/panoramic.jpg', data: '', dataType: HomeContentDataType.BANNER }
 
-];
+];*/
 
 @NgModule({
   imports: [RouterModule],

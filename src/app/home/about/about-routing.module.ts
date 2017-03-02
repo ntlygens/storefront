@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AppContentDataType, AppContentData } from '../../app.enum';
+//import { AppContentDataType, AppContentData } from '../../app.enum';
 import { AboutContentDataType, AboutContentData } from './about.enum';
 import {AboutComponent} from "./about.component";
 import {AdblockPnlComponent} from "../adblock-pnl.component";
@@ -22,6 +22,7 @@ export const MODULE_COMPONENTS = [
   SkyscrapperPnlComponent
 ];
 
+/*
 export const DISPLAY_MODULE_ROUTES: AppContentData[] = [
   { size: 'col-md-8', static: '', header: 'adblock_header', title: 'adblock_title', subtitle: 'adblock_sub-title', content: 'adblock_content', image: 'adblock_image', call2action: 'adblock_call2action', footer: 'adblock_footer', dataType: AppContentDataType.ADBLOCK },
   { size: 'col-md-12', static: 'aboutBannerBckgrnd', header: 'banner_header', title: 'banner_title', subtitle: 'banner_sub-title', content: 'banner_content', image: 'banner_image', call2action: 'banner_call2action', footer: 'banner_footer', dataType: AppContentDataType.BANNER },
@@ -30,6 +31,7 @@ export const DISPLAY_MODULE_ROUTES: AppContentData[] = [
   { size: 'col-md-4', static: '', header: 'portrait_header', title: 'portrait_title', subtitle: 'portrait_sub-title', content: 'portrait_content', image: 'portrait_image', call2action: 'portrait_call2action', footer: 'portrait_footer', dataType: AppContentDataType.PORTRAIT },
   { size: 'col-md-4', static: 'hSkyscrapperBg', header: 'skyscrapper_header', title: 'skyscrapper_title', subtitle: 'skyscrapper_sub-title', content: 'skyscrapper_content', image: 'skyscrapper_image', call2action: 'skyscrapper_call2action', footer: 'skyscrapper_footer', dataType: AppContentDataType.SKYSCRAPPER }
 ];
+*/
 
 export const ROUTES: AboutContentData[] = [
   { title: 'about1', content: 'about 1 content', image: '../../assets/panoramic.jpg', dataType: AboutContentDataType.HEADER },
