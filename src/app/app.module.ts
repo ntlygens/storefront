@@ -9,7 +9,7 @@ import { AccordionModule } from 'ng2-bootstrap';
 import { CollapseModule } from 'ng2-bootstrap';
 
 import { HomeModule } from './home/home.module';
-import { NavbarModule } from './navbar/navbar.module';
+import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 
 import { AppComponent } from './app.component';
@@ -28,7 +28,7 @@ import { AppComponent } from './app.component';
     AccordionModule.forRoot(),
     CollapseModule.forRoot(),
     HomeModule,
-    NavbarModule,
+    HeaderModule,
     FooterModule,
 
   ],
