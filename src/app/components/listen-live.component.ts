@@ -40,6 +40,10 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 
+// TODO: use following url to generate live stream from popup window.
+// TODO: http://cast4.citrus3.com:2199/tunein/smashradio1fm-stream.pls
+
+
 export class ListenLiveComponent implements OnInit {
 
   constructor() { }

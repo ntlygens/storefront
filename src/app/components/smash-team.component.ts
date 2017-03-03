@@ -43,13 +43,12 @@ import { Component, OnInit } from '@angular/core';
     }
 
     .jumbotron {
-      /*background-color: #b3ca52;*/
       background-image: url('../../assets/bckgrnd/panel-2b.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: bottom;
       background-attachment: fixed;
-      /*background-color: rgba(179, 202, 82, 0.8);*/
+      margin-bottom: 0;
     }
 
     .display-4 {
@@ -59,8 +58,6 @@ import { Component, OnInit } from '@angular/core';
     .card {
       background-color: rgba(255, 255, 255, 0.83);
     }
-
-
 
   `]
 })
