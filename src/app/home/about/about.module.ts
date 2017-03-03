@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MODULE_COMPONENTS} from './about-routing.module.ts';
+import { MODULE_COMPONENTS } from './about-routing.module';
 
 @NgModule({
   imports: [

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-fluid">
       <div class="container">
 
         <div class="media">
@@ -11,18 +11,18 @@ import { Component } from '@angular/core';
           <div class="media-body">
             <h2 class="display-4 mt-0">Streaming Radio</h2>
             <p>Tell a friend, to Tell a friend</p>
-            <!--p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p-->
           </div>
         </div>
 
       </div>
     </div>
-
     <app-navbar></app-navbar>
-
   `,
   styles: [`
     .jumbotron {
+      background-image: url('../../assets/bckgrnd/music-notes.jpg');
+      background-repeat: repeat;
+      background-size: 50%;
       margin-bottom: 0;
     }
 
