@@ -9,6 +9,8 @@ import { AccessModule } from '../access/access.module';
 import { ListenLiveComponent } from '../components/listen-live.component';
 import { SmashTeamComponent } from '../components/smash-team.component';
 import { SocialMediaComponent } from '../components/social-media.component';
+import { MediaGalleryComponent } from '../components/media-gallery.component';
+
 
 @NgModule({
   imports: [
@@ -21,13 +23,15 @@ import { SocialMediaComponent } from '../components/social-media.component';
     MODULE_ROUTES_COMPONENTS,
     ListenLiveComponent,
     SmashTeamComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    MediaGalleryComponent
   ],
   exports: [
     MODULE_ROUTES_COMPONENTS,
     ListenLiveComponent,
     SmashTeamComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    MediaGalleryComponent
   ]
 })
 export class HomeModule { }

@@ -3,12 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-social-media',
   template: `
-        <div class="jumbotron jumbotron-fluid card-info">
+        <div class="jumbotron jumbotron-fluid">
           <div class="container">
 
               <div class="card mb-5 col-md-12 text-center border-0">
                 <div class="card-block">
-                  <h2 class="display-3 font-weight-bold text-uppercase">Social Media</h2>
+                  <h2 class="display-3 inset-text font-weight-bold text-uppercase">Social Media</h2>
                   <h4 class="card-title">To the Best in Hip-Hop, R&B, Soca, Reggae and more</h4>
                 </div>
               </div>
@@ -98,6 +98,10 @@ import { Component, OnInit } from '@angular/core';
         color: #E04946;
       }
 
+      .display-3 {
+        color: #4e555a;
+      }
+
       .card {
         background-color: rgba(255, 255, 255, 0.7);
       }
@@ -106,6 +110,27 @@ import { Component, OnInit } from '@angular/core';
         padding: 2rem 1rem 1rem;
 
       }
+
+      .media-card .card-block {
+        padding-top: 0;
+        padding-bottom: 8rem;
+      }
+
+      .media-card .card-footer {
+        background-color: transparent;
+        border: 0;
+      }
+
+      .inset-text {
+          /* Shadows are visible under slightly transparent text color */
+          color: rgba(10,60,150, 0.8);
+          text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+      }
+
+      /* Don't show shadows when selecting text */
+      ::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
+      ::selection { background: #5af; color: #fff; text-shadow: none; }
+
       .fb {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#385e92+0,a9e4f7+100 */
         background: #385e92; /* Old browsers */
@@ -116,18 +141,28 @@ import { Component, OnInit } from '@angular/core';
       }
       .ig {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#effcae+0,f88e11+100 */
-background: #effcae; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #effcae 0%, #f88e11 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #effcae 0%,#f88e11 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #effcae 0%,#f88e11 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#effcae', endColorstr='#f88e11',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background: #effcae; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #effcae 0%, #f88e11 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #effcae 0%,#f88e11 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #effcae 0%,#f88e11 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#effcae', endColorstr='#f88e11',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
       }
-
-      .media-card .card-block {
-        padding-top: 0;
-        padding-bottom: 8rem;
+      .tw {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2fbff+0,55acef+100 */
+        background: #e2fbff; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #e2fbff 0%, #55acef 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #e2fbff 0%,#55acef 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #e2fbff 0%,#55acef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2fbff', endColorstr='#55acef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
       }
-
+      .yt {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e62d28+0,fffde2+100 */
+        background: #e62d28; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #e62d28 0%, #fffde2 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #e62d28 0%,#fffde2 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #e62d28 0%,#fffde2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e62d28', endColorstr='#fffde2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
   `]
 })
 export class SocialMediaComponent implements OnInit {
