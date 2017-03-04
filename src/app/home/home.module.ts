@@ -5,17 +5,18 @@ import { RouterModule } from '@angular/router';
 import { MODULE_ROUTES_COMPONENTS, MODULE_ROUTES } from '../app-routing.module';
 import { CarouselModule } from 'ng2-bootstrap/carousel/carousel.module';
 import { AccessModule } from '../access/access.module';
+import { GalleryModule } from '../gallery/gallery.module';
 
 import { ListenLiveComponent } from '../components/listen-live.component';
 import { SmashTeamComponent } from '../components/smash-team.component';
 import { SocialMediaComponent } from '../components/social-media.component';
-import { MediaGalleryComponent } from '../components/media-gallery.component';
 
 
 @NgModule({
   imports: [
     CommonModule,
     AccessModule,
+    GalleryModule,
     RouterModule.forChild(MODULE_ROUTES),
     CarouselModule
   ],
@@ -24,14 +25,12 @@ import { MediaGalleryComponent } from '../components/media-gallery.component';
     ListenLiveComponent,
     SmashTeamComponent,
     SocialMediaComponent,
-    MediaGalleryComponent
   ],
   exports: [
     MODULE_ROUTES_COMPONENTS,
     ListenLiveComponent,
     SmashTeamComponent,
     SocialMediaComponent,
-    MediaGalleryComponent
   ]
 })
 export class HomeModule { }
