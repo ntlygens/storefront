@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { MODULE_ROUTES_COMPONENTS, MODULE_ROUTES } from '../app-routing.module';
-import { CarouselModule } from 'ng2-bootstrap/carousel/carousel.module';
 import { AccessModule } from '../access/access.module';
 import { GalleryModule } from '../gallery/gallery.module';
 
@@ -18,7 +17,6 @@ import { SocialMediaComponent } from '../components/social-media.component';
     AccessModule,
     GalleryModule,
     RouterModule.forChild(MODULE_ROUTES),
-    CarouselModule
   ],
   declarations: [
     MODULE_ROUTES_COMPONENTS,
