@@ -32,7 +32,15 @@ import { Component, OnInit } from '@angular/core';
 
 
   `,
-  styleUrls: ['./gallery.component.css']
+  styles: [`
+    .jumbotron {
+      background-image: url('../../assets/bckgrnd/panel-6.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+  `]
 })
 
 export class GalleryComponent implements OnInit {
