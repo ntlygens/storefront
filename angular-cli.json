@@ -23,7 +23,7 @@
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/ng2-bootstrap/bundles/ng2-bootstrap.umd.omin.js"
+        "../node_modules/ng2-bootstrap/bundles/ng2-bootstrap.umd.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
