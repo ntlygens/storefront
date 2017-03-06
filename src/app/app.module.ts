@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
@@ -9,16 +9,15 @@ import { AccordionModule } from 'ng2-bootstrap';
 import { CollapseModule } from 'ng2-bootstrap';
 
 import { HomeModule } from './home/home.module';
-import { NavbarModule } from './navbar/navbar.module';
+import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 
 import { AppComponent } from './app.component';
-//import { AboutComponent } from 'home/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    //AboutComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,10 +28,16 @@ import { AppComponent } from './app.component';
     AccordionModule.forRoot(),
     CollapseModule.forRoot(),
     HomeModule,
-    NavbarModule,
-    FooterModule
+    HeaderModule,
+    FooterModule,
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+  ],
+  exports: [
+
+  ]
 })
 export class AppModule { }
