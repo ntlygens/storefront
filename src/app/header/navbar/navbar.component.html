@@ -1,25 +1,25 @@
-<nav class="navbar navbar-fixed-top navbar-toggleable-md navbar-light bg-faded nav-btm-spcr">
-  <div class="clearfix">
-    <button (click)="isCollapsed = !isCollapsed"
-            class="navbar-toggler navbar-toggler-right hidden-sm-up" type="button"
-            aria-controls="bd-main-nav"
-            aria-label="Toggle navigation">
-      <span class="glyphicon glyphicons-folder-new"></span>
+<nav class='navbar navbar-fixed-top navbar-toggleable-md navbar-light bg-faded nav-btm-spcr'>
+  <div class='clearfix'>
+    <button (click)='isCollapsed = !isCollapsed'
+            class='navbar-toggler navbar-toggler-right hidden-sm-up' type='button'
+            aria-controls='bd-main-nav'
+            aria-label='Toggle navigation'>
+      <span class='glyphicon glyphicons-folder-new'></span>
       {{menuIcon}}
     </button>
-    <a (click)="isCollapsed = true" class="navbar-brand hidden-sm-up" [routerLink]="[brandMenu.path]">
-      <img src="../../assets/glyphicons/glyphicons/png/glyphicons-21-home.png" class="d-inline-block align-top" alt="">
+    <a (click)='isCollapsed = true' class='navbar-brand hidden-sm-up' [routerLink]='[brandMenu.path]'>
+      <img src='../../assets/glyphicons/glyphicons/png/glyphicons-21-home.png' class='d-inline-block align-top' alt="">
       {{brandMenu.title}}
     </a>
   </div>
-  <div class="navbar-toggleable-xs navbar-collapse" id="bd-main-nav"
-       [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}">
-    <ul class="nav navbar-nav">
-      <li (click)="isCollapsed = true" class="nav-item" routerLinkActive="active">
-        <a class="navbar-brand hidden-xs-down" [routerLink]="[brandMenu.path]">{{brandMenu.title}}</a>
+  <div class='navbar-toggleable-xs navbar-collapse' id='bd-main-nav'
+       [attr.aria-expanded]='!isCollapsed' [ngClass]='{collapse: isCollapsed}'>
+    <ul class='nav navbar-nav'>
+      <li (click)='isCollapsed = true' class='nav-item' routerLinkActive='active'>
+        <a class='navbar-brand hidden-xs-down' [routerLink]='[brandMenu.path]'>{{brandMenu.title}}</a>
       </li>
-      <li (click)="isCollapsed = true" *ngFor="let menuItem of menuItems" class="nav-item" routerLinkActive="active" [ngClass]="getMenuItemClasses(menuItem)">
-        <a class="nav-item nav-link" [routerLink]="[menuItem.path]" routerLinkActive="active">{{menuItem.title}}</a>
+      <li (click)='isCollapsed = true' *ngFor='let menuItem of menuItems' class='nav-item' routerLinkActive='active' [ngClass]='getMenuItemClasses(menuItem)'>
+        <a class='nav-item nav-link' [routerLink]='[menuItem.path]' routerLinkActive='active'>{{menuItem.title}}</a>
       </li>
     </ul>
   </div>

@@ -3,15 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-listen-live',
   template: `
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
+        <div class='jumbotron jumbotron-fluid'>
+          <div class='container'>
 
-              <div class="card col-md-4 col-md-offset-4">
-                <div class="card-block">
-                  <h2 class="display-3 text-uppercase font-weight-bold">listen live</h2>
-                  <p class="card-text">To the Best in Hip-Hop, R&B, Soca, Reggae and more</p>
+              <div class='card col-md-4 col-md-offset-4'>
+                <div class='card-block'>
+                  <h2 class='display-3 text-uppercase font-weight-bold'>listen live</h2>
+                  <p class='card-text'>To the Best in Hip-Hop, R&B, Soca, Reggae and more</p>
                 </div>
-                <img class="card-img-bottom" src="../../assets/panels/listen.png" width="80%" alt="Card image cap">
+                <img class='card-img-bottom' src='../../assets/panels/listen.png' width='80%' alt='Card image cap'>
               </div>
 
           </div>

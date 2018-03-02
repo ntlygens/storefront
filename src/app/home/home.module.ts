@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MODULE_ROUTES_COMPONENTS, MODULE_ROUTES } from '../app-routing.module';
 import { AccessModule } from '../access/access.module';
@@ -15,6 +16,7 @@ import { SocialMediaComponent } from '../components/social-media.component';
   imports: [
     CommonModule,
     AccessModule,
+    HttpClientModule,
     GalleryModule,
     RouterModule.forChild(MODULE_ROUTES),
   ],

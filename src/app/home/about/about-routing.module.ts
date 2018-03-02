@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AboutContentDataType, AboutContentData } from './about.enum';
 
-import {AboutComponent} from "./about.component";
-import {ListenLiveComponent} from "../../components/listen-live.component";
-import {BannerPnlComponent} from "../../components/banner-pnl.component";
-import {Call2actionPnlComponent} from "../../components/call2action-pnl.component";
-import {HalfPortraitPnlComponent} from "../../components/half-portrait-pnl.component";
-import {PortraitPnlComponent} from "../../components/portrait-pnl.component";
-import {SkyscrapperPnlComponent} from "../../components/skyscrapper-pnl.component";
+// import {AboutComponent} from './about.component';
+import {ListenLiveComponent} from '../../components/listen-live.component';
+import {BannerPnlComponent} from '../../components/banner-pnl.component';
+import {Call2actionPnlComponent} from '../../components/call2action-pnl.component';
+import {HalfPortraitPnlComponent} from '../../components/half-portrait-pnl.component';
+import {PortraitPnlComponent} from '../../components/portrait-pnl.component';
+import {SkyscrapperPnlComponent} from '../../components/skyscrapper-pnl.component';
 
 
 export const MODULE_COMPONENTS = [
-  AboutComponent,
+  // AboutComponent,
   ListenLiveComponent,
   BannerPnlComponent,
   Call2actionPnlComponent,

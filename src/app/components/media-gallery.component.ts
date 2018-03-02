@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-media-gallery',
   template: `
-        <div class="jumbotron jumbotron-fluid card-inverse" style="background-color: #333; border-color: #333;">
-          <div class="container">
-            <div class="card">
-              <h2 class="display-4 card-title">IMAGE GALLERY</h2>
+        <div class='jumbotron jumbotron-fluid card-inverse' style='background-color: #333; border-color: #333;'>
+          <div class='container'>
+            <div class='card'>
+              <h2 class='display-4 card-title'>IMAGE GALLERY</h2>
               <h3>Imge Slides go Here</h3>
             </div>
           </div>

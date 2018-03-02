@@ -12,7 +12,7 @@ export const ROUTES: GuideContentData[] = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(ROUTES)],
+  imports: [RouterModule],
   exports: [RouterModule],
   providers: []
 })

@@ -3,59 +3,59 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-social-media',
   template: `
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
+        <div class='jumbotron jumbotron-fluid'>
+          <div class='container'>
 
-              <div class="card mb-5 col-md-12 text-center border-0">
-                <div class="card-block">
-                  <h2 class="display-3 inset-text font-weight-bold text-uppercase">Social Media</h2>
-                  <h4 class="card-title">To the Best in Hip-Hop, R&B, Soca, Reggae and more</h4>
+              <div class='card mb-5 col-md-12 text-center border-0'>
+                <div class='card-block'>
+                  <h2 class='display-3 inset-text font-weight-bold text-uppercase'>Social Media</h2>
+                  <h4 class='card-title'>To the Best in Hip-Hop, R&B, Soca, Reggae and more</h4>
                 </div>
               </div>
 
-              <div class="card-columns">
+              <div class='card-columns'>
 
-                <div class="card fb text-right mb-3 media-card">
-                  <img class="float-md-left img-rounded col-md-4 mx-auto d-block align-content-around" src="../../assets/icons/socialmedia/facebook_clr.gif" alt="Facebook image">
-                  <div class="card-block">
-                    <h2 class="card-title">Facebook</h2>
-                    <h4 class="card-title">@smashradio1fm</h4>
+                <div class='card fb text-right mb-3 media-card'>
+                  <img class='float-md-left img-rounded col-md-4 mx-auto d-block align-content-around' src='../../assets/icons/socialmedia/facebook_clr.gif' alt='Facebook image'>
+                  <div class='card-block'>
+                    <h2 class='card-title'>Facebook</h2>
+                    <h4 class='card-title'>@smashradio1fm</h4>
                   </div>
-                  <div class="card-footer text-muted">
-                    <a href="#" class="btn btn-primary" (click)="getSocialMedia()">Go somewhere</a>
+                  <div class='card-footer text-muted'>
+                    <a href='#' class='btn btn-primary' (click)='getSocialMedia()'>Go somewhere</a>
                   </div>
                 </div>
 
-                <div class="card ig text-right mb-3 media-card">
-                  <img class="float-md-left img-rounded col-md-4 mx-auto d-block align-content-around" src="../../assets/icons/socialmedia/instagram_clr.gif" alt="Facebook image">
-                  <div class="card-block">
-                    <h2 class="card-title">Instagram</h2>
-                    <h4 class="card-title">@smashradio1fm</h4>
+                <div class='card ig text-right mb-3 media-card'>
+                  <img class='float-md-left img-rounded col-md-4 mx-auto d-block align-content-around' src='../../assets/icons/socialmedia/instagram_clr.gif' alt='Facebook image'>
+                  <div class='card-block'>
+                    <h2 class='card-title'>Instagram</h2>
+                    <h4 class='card-title'>@smashradio1fm</h4>
                   </div>
-                  <div class="card-footer text-muted">
-                    <a href="#" class="btn btn-primary" (click)="getSocialMedia()">Go somewhere</a>
-                  </div>
-                </div>
-
-                <div class="card tw text-right mb-3 media-card">
-                  <img class="float-md-left img-rounded col-md-4 mx-auto d-block align-content-around" src="../../assets/icons/socialmedia/twitter_clr.gif" alt="Facebook image">
-                  <div class="card-block">
-                    <h2 class="card-title">Twitter</h2>
-                    <h4 class="card-title">@smashradio1fm</h4>
-                  </div>
-                  <div class="card-footer text-muted">
-                    <a href="#" class="btn btn-primary" (click)="getSocialMedia()">Go somewhere</a>
+                  <div class='card-footer text-muted'>
+                    <a href='#' class='btn btn-primary' (click)='getSocialMedia()'>Go somewhere</a>
                   </div>
                 </div>
 
-                <div class="card yt text-right mb-3 media-card">
-                  <img class="float-md-left img-rounded col-md-4 mx-auto d-block align-content-around" src="../../assets/icons/socialmedia/youtube_clr.gif" alt="Facebook image">
-                  <div class="card-block">
-                    <h2 class="card-title">Youtube</h2>
-                    <h4 class="card-title">@smashradio1fm</h4>
+                <div class='card tw text-right mb-3 media-card'>
+                  <img class='float-md-left img-rounded col-md-4 mx-auto d-block align-content-around' src='../../assets/icons/socialmedia/twitter_clr.gif' alt='Facebook image'>
+                  <div class='card-block'>
+                    <h2 class='card-title'>Twitter</h2>
+                    <h4 class='card-title'>@smashradio1fm</h4>
                   </div>
-                  <div class="card-footer text-muted">
-                    <a href="#" class="btn btn-primary" (click)="getSocialMedia()">Go somewhere</a>
+                  <div class='card-footer text-muted'>
+                    <a href='#' class='btn btn-primary' (click)='getSocialMedia()'>Go somewhere</a>
+                  </div>
+                </div>
+
+                <div class='card yt text-right mb-3 media-card'>
+                  <img class='float-md-left img-rounded col-md-4 mx-auto d-block align-content-around' src='../../assets/icons/socialmedia/youtube_clr.gif' alt='Facebook image'>
+                  <div class='card-block'>
+                    <h2 class='card-title'>Youtube</h2>
+                    <h4 class='card-title'>@smashradio1fm</h4>
+                  </div>
+                  <div class='card-footer text-muted'>
+                    <a href='#' class='btn btn-primary' (click)='getSocialMedia()'>Go somewhere</a>
                   </div>
                 </div>
 
@@ -166,13 +166,13 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class SocialMediaComponent implements OnInit {
-  //* TODO setup the routing service for this compnent //
-  //private socialmedias: string;
+  // * TODO setup the routing service for this compnent //
+  // private socialmedias: string;
 
   constructor() { }
 
   ngOnInit() {
-    //this.socialmedias = ROUTES.filter(socialmedia => socialmedia.companyType === socialMediaCompany.ONLINE);
+    // this.socialmedias = ROUTES.filter(socialmedia => socialmedia.companyType === socialMediaCompany.ONLINE);
 
   }
 

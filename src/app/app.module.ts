@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-import { AlertModule } from 'ng2-bootstrap';
-import { AccordionModule } from 'ng2-bootstrap';
-import { CollapseModule } from 'ng2-bootstrap';
+// import { AlertModule } from 'ng2-bootstrap';
+// import { AccordionModule } from 'ng2-bootstrap';
+// import { CollapseModule } from 'ng2-bootstrap';
 
 import { HomeModule } from './home/home.module';
 import { HeaderModule } from './header/header.module';
@@ -22,11 +22,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     RouterModule.forRoot([]),
-    AlertModule.forRoot(),
-    AccordionModule.forRoot(),
-    CollapseModule.forRoot(),
+    // AlertModule.forRoot(),
+    // AccordionModule.forRoot(),
+    // CollapseModule.forRoot(),
     HomeModule,
     HeaderModule,
     FooterModule,
